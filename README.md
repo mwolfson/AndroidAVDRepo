@@ -34,11 +34,11 @@ Find the .android folder on your system (this is where the emulator AVD files ar
 
 In that folder is the avd folder, cd into that.
 
-Clone the repo into this folder (make sure to include the . at the end of the command):
+Clone the repo into this folder (make sure to include the . at the end of the command) so the files are placed directly into this folder:
 `git clone https://github.com/mwolfson/AndroidAVDRepo.git .`
 
 So it will look something like this:
-`/Users/mwolfson/.android/avd/git clone https://github.com/mwolfson/AndroidAVDRepo.git .'
+`/Users/youruserid/.android/avd/git clone https://github.com/mwolfson/AndroidAVDRepo.git .`
 
 That's it.  Next time you start your avd manager you will see these new emulator instances in your list of available devices.  You can then modify the AVDs to your specific requirements.
 
