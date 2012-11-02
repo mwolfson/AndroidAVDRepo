@@ -1,7 +1,7 @@
 AndroidAVDRepo
 ==============
 
-A collection of pre-configured Android emulator images (AVD and ini files).
+A collection of pre-configured Android emulator images.
 
 What this is for:
 -----------------
