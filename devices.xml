@@ -1,111 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <d:devices xmlns:d="http://schemas.android.com/sdk/devices/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <d:device>
-    <d:name>Huawei Blaze</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>small</d:screen-size>
-        <d:diagonal-length>3.20</d:diagonal-length>
-        <d:pixel-density>mdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>320</d:x-dimension>
-          <d:y-dimension>480</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>180.28</d:xdpi>
-        <d:ydpi>180.28</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="MiB">256</d:ram>
-      <d:buttons>hard</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Sony Xperia S</d:name>
+    <d:name>SmapleNew</d:name>
     <d:manufacturer>User</d:manufacturer>
     <d:meta/>
     <d:hardware>
       <d:screen>
         <d:screen-size>normal</d:screen-size>
-        <d:diagonal-length>4.30</d:diagonal-length>
-        <d:pixel-density>xhdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
+        <d:diagonal-length>4.70</d:diagonal-length>
+        <d:pixel-density>hdpi</d:pixel-density>
+        <d:screen-ratio>notlong</d:screen-ratio>
         <d:dimensions>
-          <d:x-dimension>1280</d:x-dimension>
-          <d:y-dimension>720</d:y-dimension>
+          <d:x-dimension>480</d:x-dimension>
+          <d:y-dimension>854</d:y-dimension>
         </d:dimensions>
-        <d:xdpi>341.54</d:xdpi>
-        <d:ydpi>341.54</d:ydpi>
+        <d:xdpi>208.44</d:xdpi>
+        <d:ydpi>208.44</d:ydpi>
         <d:touch>
           <d:multitouch>jazz-hands</d:multitouch>
           <d:mechanism>finger</d:mechanism>
@@ -113,113 +23,23 @@ armeabi-v7a</d:abi>
         </d:touch>
       </d:screen>
       <d:networking>
-NFC
+Wifi
 Bluetooth
-Wifi</d:networking>
+NFC</d:networking>
       <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
 Compass
-Barometer</d:sensors>
+Gyroscope
+ProximitySensor
+LightSensor
+Barometer
+GPS
+Accelerometer</d:sensors>
       <d:mic>true</d:mic>
       <d:camera>
         <d:location>front</d:location>
         <d:autofocus>true</d:autofocus>
         <d:flash>true</d:flash>
       </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">1</d:ram>
-      <d:buttons>hard</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Samsung Galaxy Tab Original</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>large</d:screen-size>
-        <d:diagonal-length>7.00</d:diagonal-length>
-        <d:pixel-density>mdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>1024</d:x-dimension>
-          <d:y-dimension>600</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>169.55</d:xdpi>
-        <d:ydpi>169.55</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
       <d:camera>
         <d:location>back</d:location>
         <d:autofocus>true</d:autofocus>
@@ -228,96 +48,6 @@ Barometer</d:sensors>
       <d:keyboard>qwerty</d:keyboard>
       <d:nav>nonav</d:nav>
       <d:ram unit="MiB">512</d:ram>
-      <d:buttons>hard</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Sony X10 Mini</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>small</d:screen-size>
-        <d:diagonal-length>2.55</d:diagonal-length>
-        <d:pixel-density>mdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>240</d:x-dimension>
-          <d:y-dimension>320</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>156.86</d:xdpi>
-        <d:ydpi>156.86</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="MiB">128</d:ram>
       <d:buttons>soft</d:buttons>
       <d:internal-storage unit="GiB">
 4</d:internal-storage>
@@ -325,9 +55,9 @@ Barometer</d:sensors>
       <d:cpu>Generic CPU</d:cpu>
       <d:gpu>Generic GPU</d:gpu>
       <d:abi>
+x86
 armeabi
 mips
-x86
 armeabi-v7a</d:abi>
       <d:dock/>
       <d:power-type>battery</d:power-type>
@@ -366,387 +96,7 @@ armeabi-v7a</d:abi>
     </d:state>
   </d:device>
   <d:device>
-    <d:name>Samsung Galaxy Tab 7.7</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>xlarge</d:screen-size>
-        <d:diagonal-length>7.70</d:diagonal-length>
-        <d:pixel-density>tvdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>1280</d:x-dimension>
-          <d:y-dimension>800</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>196.03</d:xdpi>
-        <d:ydpi>196.03</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>front</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">1</d:ram>
-      <d:buttons>hard</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Motorola Xoom</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>xlarge</d:screen-size>
-        <d:diagonal-length>10.10</d:diagonal-length>
-        <d:pixel-density>mdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>1280</d:x-dimension>
-          <d:y-dimension>800</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>149.45</d:xdpi>
-        <d:ydpi>149.45</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>front</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">1</d:ram>
-      <d:buttons>hard</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Samsung S3</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>normal</d:screen-size>
-        <d:diagonal-length>4.80</d:diagonal-length>
-        <d:pixel-density>xhdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>720</d:x-dimension>
-          <d:y-dimension>1280</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>305.96</d:xdpi>
-        <d:ydpi>305.96</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>front</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">1</d:ram>
-      <d:buttons>soft</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>HTC One S</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>normal</d:screen-size>
-        <d:diagonal-length>4.30</d:diagonal-length>
-        <d:pixel-density>hdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>540</d:x-dimension>
-          <d:y-dimension>960</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>256.15</d:xdpi>
-        <d:ydpi>256.15</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>front</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">1</d:ram>
-      <d:buttons>hard</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>HTC G1</d:name>
+    <d:name>G1_4_phone_ldpi</d:name>
     <d:manufacturer>User</d:manufacturer>
     <d:meta/>
     <d:hardware>
@@ -768,23 +118,18 @@ armeabi-v7a</d:abi>
         </d:touch>
       </d:screen>
       <d:networking>
-NFC
+Wifi
 Bluetooth
-Wifi</d:networking>
+NFC</d:networking>
       <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
 Compass
-Barometer</d:sensors>
+Gyroscope
+ProximitySensor
+LightSensor
+Barometer
+GPS
+Accelerometer</d:sensors>
       <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
       <d:camera>
         <d:location>back</d:location>
         <d:autofocus>true</d:autofocus>
@@ -800,199 +145,9 @@ Barometer</d:sensors>
       <d:cpu>Generic CPU</d:cpu>
       <d:gpu>Generic GPU</d:gpu>
       <d:abi>
+x86
 armeabi
 mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Nexus 4 by Google</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>normal</d:screen-size>
-        <d:diagonal-length>4.70</d:diagonal-length>
-        <d:pixel-density>xhdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>768</d:x-dimension>
-          <d:y-dimension>1280</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>317.60</d:xdpi>
-        <d:ydpi>317.60</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>front</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">2</d:ram>
-      <d:buttons>soft</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
-armeabi-v7a</d:abi>
-      <d:dock/>
-      <d:power-type>battery</d:power-type>
-    </d:hardware>
-    <d:software>
-      <d:api-level>-</d:api-level>
-      <d:live-wallpaper-support>true</d:live-wallpaper-support>
-      <d:bluetooth-profiles/>
-      <d:gl-version>2.0</d:gl-version>
-      <d:gl-extensions/>
-      <d:status-bar>false</d:status-bar>
-    </d:software>
-    <d:state default="true" name="Portrait">
-      <d:description>The device in portrait orientation</d:description>
-      <d:screen-orientation>port</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape">
-      <d:description>The device in landscape orientation</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keyshidden</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Portrait with keyboard">
-      <d:description>The device in portrait orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-    <d:state name="Landscape with keyboard">
-      <d:description>The device in landscape orientation with a keyboard open</d:description>
-      <d:screen-orientation>land</d:screen-orientation>
-      <d:keyboard-state>keysexposed</d:keyboard-state>
-      <d:nav-state>navhidden</d:nav-state>
-    </d:state>
-  </d:device>
-  <d:device>
-    <d:name>Nexus 10 by Google</d:name>
-    <d:manufacturer>User</d:manufacturer>
-    <d:meta/>
-    <d:hardware>
-      <d:screen>
-        <d:screen-size>xlarge</d:screen-size>
-        <d:diagonal-length>10.40</d:diagonal-length>
-        <d:pixel-density>xhdpi</d:pixel-density>
-        <d:screen-ratio>long</d:screen-ratio>
-        <d:dimensions>
-          <d:x-dimension>2560</d:x-dimension>
-          <d:y-dimension>1600</d:y-dimension>
-        </d:dimensions>
-        <d:xdpi>290.28</d:xdpi>
-        <d:ydpi>290.28</d:ydpi>
-        <d:touch>
-          <d:multitouch>jazz-hands</d:multitouch>
-          <d:mechanism>finger</d:mechanism>
-          <d:screen-type>capacitive</d:screen-type>
-        </d:touch>
-      </d:screen>
-      <d:networking>
-NFC
-Bluetooth
-Wifi</d:networking>
-      <d:sensors>
-ProximitySensor
-Accelerometer
-LightSensor
-Gyroscope
-GPS
-Compass
-Barometer</d:sensors>
-      <d:mic>true</d:mic>
-      <d:camera>
-        <d:location>front</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:camera>
-        <d:location>back</d:location>
-        <d:autofocus>true</d:autofocus>
-        <d:flash>true</d:flash>
-      </d:camera>
-      <d:keyboard>qwerty</d:keyboard>
-      <d:nav>nonav</d:nav>
-      <d:ram unit="GiB">2</d:ram>
-      <d:buttons>soft</d:buttons>
-      <d:internal-storage unit="GiB">
-4</d:internal-storage>
-      <d:removable-storage unit="TiB"/>
-      <d:cpu>Generic CPU</d:cpu>
-      <d:gpu>Generic GPU</d:gpu>
-      <d:abi>
-armeabi
-mips
-x86
 armeabi-v7a</d:abi>
       <d:dock/>
       <d:power-type>battery</d:power-type>
