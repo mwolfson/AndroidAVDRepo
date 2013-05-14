@@ -6,8 +6,9 @@ This repo is a collection of pre-configured Android emulator configuration files
 
 ## Smartphones
 
-- Galaxy Nexus, by Google
+- Nexus One, by Google
 - Nexus S, by Google
+- Galaxy Nexus, by Google
 - Nexus 4, by Google
 - G1 aka Dream, by HTC
 - Droid (original), by Motorola
@@ -20,8 +21,11 @@ This repo is a collection of pre-configured Android emulator configuration files
 ## Tablets 
 
 - Kindle Fire, by Amazon
-- Kindle Fire HD, by Amazon
+- Kindle Fire HD (7" and 8.9"), by Amazon
 - Galaxy Tablet, by Samsung
+
+
+
 
 
 
