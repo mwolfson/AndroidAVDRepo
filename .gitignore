@@ -16,7 +16,7 @@ bin/
 gen/
 
 # user-updated ini files
-ini
+ini/
 
 # Local configuration file (sdk path, etc)
 local.properties
