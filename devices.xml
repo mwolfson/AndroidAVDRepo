@@ -27,13 +27,13 @@ Bluetooth
 Wifi
 NFC</d:networking>
       <d:sensors>
-LightSensor
 Accelerometer
-GPS
 Barometer
-ProximitySensor
 Compass
-Gyroscope</d:sensors>
+GPS
+Gyroscope
+LightSensor
+ProximitySensor</d:sensors>
       <d:mic>true</d:mic>
       <d:camera>
         <d:location>front</d:location>
@@ -65,10 +65,10 @@ Gyroscope</d:sensors>
       <d:cpu>Generic CPU</d:cpu>
       <d:gpu>Generic GPU</d:gpu>
       <d:abi>
-mips
-x86
+armeabi
 armeabi-v7a
-armeabi</d:abi>
+x86
+mips</d:abi>
       <d:dock/>
       <d:power-type>battery</d:power-type>
     </d:hardware>
@@ -120,13 +120,13 @@ Bluetooth
 Wifi
 NFC</d:networking>
       <d:sensors>
-LightSensor
 Accelerometer
-GPS
 Barometer
-ProximitySensor
 Compass
-Gyroscope</d:sensors>
+GPS
+Gyroscope
+LightSensor
+ProximitySensor</d:sensors>
       <d:mic>true</d:mic>
       <d:camera>
         <d:location>front</d:location>
@@ -158,10 +158,10 @@ Gyroscope</d:sensors>
       <d:cpu>Generic CPU</d:cpu>
       <d:gpu>Generic GPU</d:gpu>
       <d:abi>
-mips
-x86
+armeabi
 armeabi-v7a
-armeabi</d:abi>
+x86
+mips</d:abi>
       <d:dock/>
       <d:power-type>battery</d:power-type>
     </d:hardware>
@@ -209,14 +209,14 @@ armeabi</d:abi>
         </d:touch>
       </d:screen>
       <d:networking>
-Wifi
 Bluetooth
+Wifi
 NFC</d:networking>
       <d:sensors>
 Accelerometer
-LightSensor
 Barometer
-Compass</d:sensors>
+Compass
+LightSensor</d:sensors>
       <d:mic>true</d:mic>
       <d:keyboard>nokeys</d:keyboard>
       <d:nav>nonav</d:nav>
@@ -228,10 +228,10 @@ Compass</d:sensors>
       <d:cpu>Generic CPU</d:cpu>
       <d:gpu>Generic GPU</d:gpu>
       <d:abi>
-mips
-x86
+armeabi
 armeabi-v7a
-armeabi</d:abi>
+x86
+mips</d:abi>
       <d:dock/>
       <d:power-type>battery</d:power-type>
     </d:hardware>
@@ -279,14 +279,14 @@ armeabi</d:abi>
         </d:touch>
       </d:screen>
       <d:networking>
-Wifi
 Bluetooth
+Wifi
 NFC</d:networking>
       <d:sensors>
 Accelerometer
-LightSensor
 Barometer
-Compass</d:sensors>
+Compass
+LightSensor</d:sensors>
       <d:mic>true</d:mic>
       <d:keyboard>nokeys</d:keyboard>
       <d:nav>nonav</d:nav>
@@ -298,10 +298,79 @@ Compass</d:sensors>
       <d:cpu>Generic CPU</d:cpu>
       <d:gpu>Generic GPU</d:gpu>
       <d:abi>
-mips
-x86
+armeabi
 armeabi-v7a
-armeabi</d:abi>
+x86
+mips</d:abi>
+      <d:dock/>
+      <d:power-type>battery</d:power-type>
+    </d:hardware>
+    <d:software>
+      <d:api-level>-</d:api-level>
+      <d:live-wallpaper-support>true</d:live-wallpaper-support>
+      <d:bluetooth-profiles/>
+      <d:gl-version>2.0</d:gl-version>
+      <d:gl-extensions/>
+      <d:status-bar>false</d:status-bar>
+    </d:software>
+    <d:state default="true" name="Portrait">
+      <d:description>The device in portrait orientation</d:description>
+      <d:screen-orientation>port</d:screen-orientation>
+      <d:keyboard-state>keyssoft</d:keyboard-state>
+      <d:nav-state>navhidden</d:nav-state>
+    </d:state>
+    <d:state name="Landscape">
+      <d:description>The device in landscape orientation</d:description>
+      <d:screen-orientation>land</d:screen-orientation>
+      <d:keyboard-state>keyssoft</d:keyboard-state>
+      <d:nav-state>navhidden</d:nav-state>
+    </d:state>
+  </d:device>
+  <d:device>
+    <d:name>G1_4_phone_ldpi</d:name>
+    <d:manufacturer>HTC</d:manufacturer>
+    <d:meta/>
+    <d:hardware>
+      <d:screen>
+        <d:screen-size>normal</d:screen-size>
+        <d:diagonal-length>5.00</d:diagonal-length>
+        <d:pixel-density>ldpi</d:pixel-density>
+        <d:screen-ratio>notlong</d:screen-ratio>
+        <d:dimensions>
+          <d:x-dimension>320</d:x-dimension>
+          <d:y-dimension>480</d:y-dimension>
+        </d:dimensions>
+        <d:xdpi>115.38</d:xdpi>
+        <d:ydpi>115.38</d:ydpi>
+        <d:touch>
+          <d:multitouch>jazz-hands</d:multitouch>
+          <d:mechanism>finger</d:mechanism>
+          <d:screen-type>capacitive</d:screen-type>
+        </d:touch>
+      </d:screen>
+      <d:networking>
+Bluetooth
+Wifi
+NFC</d:networking>
+      <d:sensors>
+Barometer
+Compass
+LightSensor</d:sensors>
+      <d:mic>true</d:mic>
+      <d:keyboard>nokeys</d:keyboard>
+      <d:nav>nonav</d:nav>
+      <d:ram unit="GiB">1</d:ram>
+      <d:buttons>soft</d:buttons>
+      <d:internal-storage unit="GiB">
+4</d:internal-storage>
+      <d:removable-storage unit="TiB"/>
+      <d:cpu>Generic CPU</d:cpu>
+      <d:gpu>Generic GPU</d:gpu>
+      <d:abi>
+armeabi
+armeabi-v7a
+x86
+mips</d:abi>
       <d:dock/>
       <d:power-type>battery</d:power-type>
     </d:hardware>
