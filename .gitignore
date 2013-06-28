@@ -20,3 +20,9 @@ ini/
 
 # Local configuration file (sdk path, etc)
 local.properties
+
+# user / lock / temp files
+avd/*/cache.*
+avd/*/hardware-qemu.*
+avd/*/userdata-qemu.*
+avd/*/emulator-user.*
