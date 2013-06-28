@@ -440,10 +440,15 @@ ProximitySensor</d:sensors>
         <d:autofocus>true</d:autofocus>
         <d:flash>true</d:flash>
       </d:camera>
+      <d:camera>
+        <d:location>back</d:location>
+        <d:autofocus>true</d:autofocus>
+        <d:flash>true</d:flash>
+      </d:camera>
       <d:keyboard>qwerty</d:keyboard>
       <d:nav>nonav</d:nav>
       <d:ram unit="MiB">512</d:ram>
-      <d:buttons>soft</d:buttons>
+      <d:buttons>hard</d:buttons>
       <d:internal-storage unit="GiB">
 4</d:internal-storage>
       <d:removable-storage unit="TiB"/>
