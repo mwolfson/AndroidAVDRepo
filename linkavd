@@ -1,35 +1,17 @@
 #!/bin/bash
 
-# which android 2>&1 /dev/null
-# if [ $? -gt 0 ];
-# then
-# 	echo "In order to use this script the SDK tools need to be added to your PATH"
-# 	echo ".bash_profile or .bashrc will be updated accordingly."
-# 	echo ""
-# 	read -e -p "Enter the path to the SDK (do not include /sdk/tools): " ANDROID_PATH
-
-# 	if [ ! "$ANDROID_PATH" == "" ];
-# 	then
-# 		export PATH="$PATH:$ANDROID_PATH/sdk/tools"
-
-# 		PROFILE=""
-# 		if [ -f "$HOME/.bash_profile" ];
-# 		then
-# 			PROFILE="$HOME/.bash_profile"
-# 		else
-# 			if [ -f "$HOME/.bashrc" ];
-# 			then
-# 				PROFILE="$HOME/.bashrc"
-# 			fi
-# 		fi
-
-# 		echo -e "" >> "$PROFILE"
-# 		echo -e "# add android tools to PATH, added by androidavdrepo" >> "$PROFILE"
-# 		echo -e "export PATH=\"$PATH:$ANDROID_PATH/sdk/tools\"" >> "$PROFILE"
-# 	fi
-# fi
-
 WD="$(pwd)"
+
+function linker {
+	# hlink source, destination
+	"$WD/hlink" "$1" "$2"
+}
+
+function unlinker {
+	# hlink -u destination
+	"$WD/hlink" -u "$1"
+}
+
 
 if [ ANDROID_SDK_HOME == "" ];
 then
@@ -55,16 +37,16 @@ else
 
 	FILELIST="$(ls *.ini)"
 
-	unlink "$HOME/.android/devices.xml"
+	unlinker "$HOME/.android/devices.xml"
 
 	# clean old links if they exist
 	for FILE in FILELIST
 	do
-		unlink "$HOME/.android/avd/$FILE"
+		unlinker "$HOME/.android/avd/$FILE"
 	done
 fi
 
-ln -sfh "$WD/devices.xml" "$HOME/.android/devices.xml"
+linker "$WD/devices.xml" "$HOME/.android/devices.xml"
 
 for FILE in $FILELIST
 do
@@ -73,7 +55,7 @@ do
 	sed 's|path=.*/.android/avd|path='"$WD"'/avd|g' "$FILE" > "../ini/$FILE"
 
 	echo -e "Linking to $BASE from .android/avd ..."
-	ln -sfh "$WD/ini/$FILE" "$HOME/.android/avd/$FILE"
+	linker "$WD/ini/$FILE" "$HOME/.android/avd/$FILE"
 
 	# repairs path issues in the disk images
 	echo -e "Repairing any issues in config.ini for $BASE ..."
