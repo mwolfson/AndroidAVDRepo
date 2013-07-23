@@ -13,7 +13,7 @@ function unlinker {
 }
 
 
-if [ ANDROID_SDK_HOME == "" ];
+if [ "$ANDROID_SDK_HOME" == "" ];
 then
 	HOMEDIR="$HOME/.android"
 else
@@ -30,32 +30,24 @@ cd avd
 if [ $# -gt 1 ]; then
 	FILELIST="$@"
 else
-	read -p "Update SDK? (y/n): " REPLY
-	if [ "$REPLY" == "y" ]; then
-		../updatesdk
-	fi
-
 	FILELIST="$(ls *.ini)"
-
-	unlinker "$HOME/.android/devices.xml"
-
-	# clean old links if they exist
-	for FILE in FILELIST
-	do
-		unlinker "$HOME/.android/avd/$FILE"
-	done
 fi
 
-linker "$WD/devices.xml" "$HOME/.android/devices.xml"
+unlinker "$HOMEDIR/devices.xml"
+linker "$WD/devices.xml" "$HOMEDIR/devices.xml"
 
 for FILE in $FILELIST
 do
 	BASE="${FILE%.*}"
 	echo -e "Cleaning path in $FILE ..."
-	sed 's|path=.*/.android/avd|path='"$WD"'/avd|g' "$FILE" > "../ini/$FILE"
+	sed 's|path=/Users/user/.android/avd|path='"$HOMEDIR"'/avd|g' "$FILE" > "../ini/$FILE"
 
 	echo -e "Linking to $BASE from .android/avd ..."
-	linker "$WD/ini/$FILE" "$HOME/.android/avd/$FILE"
+
+	unlinker "$HOMEDIR/avd/$FILE"
+	linker "$WD/ini/$FILE" "$HOMEDIR/avd/$FILE"
+	unlinker "$HOMEDIR/avd/${BASE}.avd"
+	linker "$WD/avd/${BASE}.avd" "$HOMEDIR/avd/${BASE}.avd"
 
 	# repairs path issues in the disk images
 	echo -e "Repairing any issues in config.ini for $BASE ..."
