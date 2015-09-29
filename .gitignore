@@ -8,9 +8,21 @@
 # Java class files
 *.class
 
+# Mac OS files
+.DS_Store
+
 # generated files
 bin/
 gen/
 
+# user-updated ini files
+ini/
+
 # Local configuration file (sdk path, etc)
 local.properties
+
+# user / lock / temp files
+avd/*/cache.*
+avd/*/hardware-qemu.*
+avd/*/userdata-qemu.*
+avd/*/emulator-user.*

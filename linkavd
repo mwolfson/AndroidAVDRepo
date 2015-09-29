@@ -1,0 +1,60 @@
+#!/bin/bash
+
+WD="$(pwd)"
+
+function linker {
+	# hlink source, destination
+	"$WD/hlink" "$1" "$2"
+}
+
+function unlinker {
+	# hlink -u destination
+	"$WD/hlink" -u "$1"
+}
+
+
+if [ "$ANDROID_SDK_HOME" == "" ];
+then
+	HOMEDIR="$HOME/.android"
+else
+	HOMEDIR="$ANDROID_SDK_HOME"
+fi
+
+if [ ! -d "ini" ];
+then
+	mkdir ini 2>&1
+fi
+
+cd avd
+
+if [ $# -gt 1 ]; then
+	FILELIST="$@"
+else
+	FILELIST="$(ls *.ini)"
+fi
+
+unlinker "$HOMEDIR/devices.xml"
+linker "$WD/devices.xml" "$HOMEDIR/devices.xml"
+
+for FILE in $FILELIST
+do
+	BASE="${FILE%.*}"
+	echo -e "Cleaning path in $FILE ..."
+	sed 's|path=/Users/user/.android/avd|path='"$HOMEDIR"'/avd|g' "$FILE" > "../ini/$FILE"
+
+	echo -e "Linking to $BASE from .android/avd ..."
+
+	unlinker "$HOMEDIR/avd/$FILE"
+	linker "$WD/ini/$FILE" "$HOMEDIR/avd/$FILE"
+	unlinker "$HOMEDIR/avd/${BASE}.avd"
+	linker "$WD/avd/${BASE}.avd" "$HOMEDIR/avd/${BASE}.avd"
+
+	# repairs path issues in the disk images
+	echo -e "Repairing any issues in config.ini for $BASE ..."
+	android update avd -n "$BASE"
+
+	echo -e "Done."
+	echo ""
+done
+
+cd "$WD"

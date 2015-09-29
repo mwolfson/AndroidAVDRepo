@@ -1,0 +1,13 @@
+#!/bin/bash
+which android 2>&1 /dev/null
+if [ $? -gt 0 ];
+then
+	echo "Please add your SDK tools directory to the PATH before using this script."
+	exit
+fi
+
+KINDLE_ADDONS="http://kindle-sdk.s3.amazonaws.com/addon.xml"
+
+# http://kindle-sdk.s3.amazonaws.com/addon.xml
+
+android update sdk --no-ui
